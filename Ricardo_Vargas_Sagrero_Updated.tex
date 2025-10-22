@@ -1,0 +1,147 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{hyperref}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Ricardo Vargas Sagrero}}\\
+    Mexico city, Mexico \\
+	r.sagrero1@gmail.com | +52 (921)265-4489 | \href{https://www.linkedin.com/in/ricardo-vargas-sagrero/}{LinkedIn}
+\end{center}
+
+%==== Summary ====%
+\header{Summary}
+\vspace{1mm}
+Software engineer with over 4 years of experience in back-end development, networking, and system analytics solutions. Proven ability to deliver robust and efficient software applications. Seeking to leverage my expertise in a challenging role to contribute to innovative projects and drive technological advancements.
+\vspace{2mm}
+
+%==== Skills ====%
+\header{Skills}
+\vspace{1mm}
+ASP .NET, C\#, Python, PowerShell scripting, Microsoft Azure, Azure DevOps, REST APIs, Networking, System Analytics, Unit Testing, Agile Methodologies, Problem Solving, SQL, Git, Docker, Microservices, CI/CD\\ 
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Thomson Reuters} \hfill \textbf{Mexico City}\\
+\textit{Software Engineer} \hfill May 2022 - October 2025\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Created multiple endpoints using ASP .NET API to create excel spreadsheets using Aspose.cells library, improving data reporting to the client.
+	\item Implemented and maintained solution to automate the creation of PBI/PR for changes in the codebase for the API Specifications, reducing manual effort and improving efficiency. The solution was crucial for the team to keep track of changes and ensure that all updates were properly documented.
+	\item Remediate  security vulnerabilities in the codebase using SNYK platform, ensuring compliance with industry standards and best practices.
+	\item Remediate accessibility issues in the web application using AXE dev tools, improving user experience and ensuring compliance with accessibility standards.
+    \item Participated in code reviews and provided constructive feedback to team members, fostering a culture of continuous improvement and learning.
+    \item Utilized Azure DevOps for project management, version control, and CI/CD pipelines, streamlining development processes and enhancing collaboration.
+\end{itemize}
+
+\textbf{Freelance} \hfill \textbf{Veracruz State}\\
+\textit{Software Engineer} \hfill October 2020 - January 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item  Working with a multi-disciple team to provide the solution for the
+ update of a controller system. Responsible for system analysis and
+ management of activities with business people to reach the common goal.
+    \item Contributed to the creation of various modules that streamlined the process of accounting harmonization.
+    \item New processes were created that help tasks that were previously performed manually to be automated and thus save execution time.
+\end{itemize}
+
+\textbf{Computadoras Accesorios y Sistemas, S.A de C.V.} \hfill \textbf{Mexico City}\\
+\textit{Network Operation Center Engineer} \hfill February 2020 - October 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Automated network monitoring and reporting tasks using Python scripts, reducing manual effort and improving response times to network issues.
+    \item Collaborated with sales and technical teams to design and implement tailored solutions for clients, enhancing customer satisfaction and driving business growth.
+    \item Participated in the deployment and configuration of network equipment, ensuring optimal performance and reliability for client infrastructures.
+\end{itemize}
+\vspace{2mm}
+
+%==== Intership ====%
+\header{Intership}
+\textbf{Centro Nacional de Cálculo 
+(CENAC) IPN} \hfill \textbf{Mexico City}\\
+\textit{System Analist} \hfill October 2018 - April 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item  Work in conjunction with the team of analysts to make the lifting of customer requirements. Organize and prioritize work to accomplish assigned tasks in time. Similarly, I worked on test application development in JAVA for client modules.
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{Instituto Politécnico Nacional}\hfill \textbf{Mexico City} \\
+BS Computer Science \hfill August 2015 — December 2019\\ 
+\vspace{2mm}
+
+\end{document}
